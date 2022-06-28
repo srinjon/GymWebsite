@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JON FITNESS</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #011412;
+        margin: 0px;
+        padding: 0px;
+        background: url('img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position:absolute;
+        left:60px;
+        top:20px;
+        margin: auto;
+        color:red;
+
+    }
+    .mid{
+        display:block;
+        width: 41%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+        font-size: 17px;
+    }
+    .right{
+        position:absolute;
+        right:37px;
+        top:20px;
+        display:inline-block;
+        /* border: 2px solid yellow; */
+
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        
+        display:inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color:aliceblue;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        text-decoration: underline;
+        color:gray
+    }
+    .btn{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 15px 9px;
+        background-color:#19155e;
+        color:#bbe9e1;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(100, 34, 34);
+
+    }
+    .container{
+        /* border:2px solid white; */
+        margin:24px 67px;
+        padding:55px 56px;
+        width:34%;
+        border-radius: 30px;
+        /* color: rgb(158, 24, 24); */
+    }
+    .form-group input{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: LEFT;
+        background-color: #d2eaf7;
+        display: block;
+        width: 486px;
+        padding: 7px;
+        border:2px solid grey;
+        border-radius: 5px;
+        margin: 11px auto;
+        font-size: 18px;    }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 24px;
+            display: block;
+            height:50px;
+            width: 98%;
+            margin: 23px auto;
+            border-radius: 10px;
+        }
+</style>
+<body>
+    <header class="header">
+        
+        <!-- left box for logo -->
+        <div class="left">      
+     <a href="#"><img src="Gym-Logo.jpg" alt="" width="95" height="60"></a>
+     <div><strong>JON FITNESS</strong></div>
+        </div>
+        
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"><strong>Home</strong></a></li>
+                <li><a href="#"><strong>About Us</strong></a></li>
+                <li><a href="#"><strong> Calculator</strong></a></li>
+                <li><a href="#"><strong>Contact Us</strong></a></li>
+            </ul>
+        </div>
+        
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn"><strong>Call Us Now</strong></button><button class="btn"><strong>Email Us</strong></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Kolkata now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Locality">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Enter your Phone No.">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter your Email Id">
+                                </div>
+                        <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
